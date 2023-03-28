@@ -57,12 +57,9 @@ public class EmployeeService {
             System.out.println(t);
         }
            }
+    public static void  minSalaryDepart (Employee [] arr,int number ){
+       while ()
+    }
 }
 
 
-//    Employee[] Empls = new Employee[];
-//    void addEmpl(Employee empl){
-//    for (Employee curEmpl: Empls){if(
-//        curEmpl.getName().equals(empl.getName())){sout"Такой сотрудник уже есть"}
-//    }
-//    }
