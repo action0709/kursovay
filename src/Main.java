@@ -19,5 +19,7 @@
             EmployeeService.maxWageEmployee(empl);//задание 4
             EmployeeService.averageSalaryEmployee(empl);//задание 5
             EmployeeService.fioEmployee(empl);//задание 6
+            //______Повышенная сложность
+            EmployeeService.indexingSalary(empl,20);//задание 1
         }
     }

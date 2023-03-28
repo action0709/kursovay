@@ -50,7 +50,15 @@ public class EmployeeService {
             System.out.println(t.getName());
         }
     }
-    }
+    //________Повышенная сложность
+    public static void  indexingSalary (Employee[] arr,int Procent){
+        for (Employee t : arr) {
+            t.setSalary(t.getSalary()+(t.getSalary()*Procent)/100);
+            System.out.println(t);
+        }
+           }
+}
+
 
 //    Employee[] Empls = new Employee[];
 //    void addEmpl(Employee empl){
