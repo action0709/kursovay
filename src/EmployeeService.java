@@ -57,9 +57,7 @@ public class EmployeeService {
             System.out.println(t);
         }
            }
-    public static void  minSalaryDepart (Employee [] arr,int number ){
-       while ()
-    }
+
 }
 
 
