@@ -37,6 +37,7 @@ public class EmployeeBook {
     public double sumExpenses() {
         double sum = 0;
         for (Employee element : employees) {
+            if(employees==null){continue;}
             sum = sum + element.getSalary();
         }
         return sum;
@@ -44,7 +45,8 @@ public class EmployeeBook {
 
     public void listEmployees() {
         for (Employee t : employees) {
-            System.out.println(t);
+            if(employees==null){continue;}
+              System.out.println(t);
         }
     }
 
@@ -52,6 +54,7 @@ public class EmployeeBook {
         float min = Float.MAX_VALUE;
         String Empl = null;
         for (Employee t : employees) {
+            if(employees==null){continue;}
             if (t.getSalary() < min) {
                 min = t.getSalary();
                 Empl = t.getName();
@@ -64,6 +67,7 @@ public class EmployeeBook {
         float max = Float.MIN_VALUE;
         String Empl = null;
         for (Employee t : employees) {
+            if(employees==null){continue;}
             if (t.getSalary() > max) {
                 max = t.getSalary();
                 Empl = t.getName();
@@ -78,6 +82,7 @@ public class EmployeeBook {
 
     public void fioEmployee() {
         for (Employee t : employees) {
+            if(employees==null){continue;}
             System.out.println(t.getName());
         }
     }
@@ -85,6 +90,7 @@ public class EmployeeBook {
     //________Повышенная сложность
     public void indexingSalary(int Procent) {
         for (Employee t : employees) {
+            if(employees==null){continue;}
             t.setSalary(t.getSalary() + (t.getSalary() * Procent) / 100);
             System.out.println(t);
         }
@@ -93,6 +99,7 @@ public class EmployeeBook {
     public void findMin(int department) {
         Employee minEmployee = null;
         for (Employee employee : employees) {
+            if(employees==null){continue;}
             if (employee.getDepartament() != department) {
                 continue;
             }
@@ -107,6 +114,7 @@ public class EmployeeBook {
     public void findMax(int department) {
         Employee maxEmployee = null;
         for (Employee employee : employees) {
+            if(employees==null){continue;}
             if (employee.getDepartament() != department) {
                 continue;
             }
@@ -121,6 +129,7 @@ public class EmployeeBook {
     public void sumExpensesDEep(int department) {
         float sum = 0f;
         for (Employee element : employees) {
+            if(employees==null){continue;}
             if (element.getDepartament() == department) {
                 sum = sum + element.getSalary();
             }
@@ -154,6 +163,7 @@ public class EmployeeBook {
     public void raiseSalary(int Procent, int department) {
         System.out.println("Зарплата департамента " + department + " проиндексирована: ");
         for (Employee t : employees) {
+            if(employees==null){continue;}
             if (t.getDepartament() != department) {
                 continue;
             }
@@ -165,6 +175,7 @@ public class EmployeeBook {
 
     public void printAllWithSalaryLess(double salary) {
         for (Employee employee : employees) {
+            if(employees==null){continue;}
             if (employee.getSalary() < salary) {
                 System.out.println("Зарплата меньше " + salary + " у " + employee);
             }
@@ -174,6 +185,7 @@ public class EmployeeBook {
 
     public void printAllWithSalaryMore(double salary) {
         for (Employee employee : employees) {
+            if(employees==null){continue;}
             if (employee.getSalary() >= salary) {
                 System.out.println("Зарплата больше или равно " + salary + " у " + employee);
             }
