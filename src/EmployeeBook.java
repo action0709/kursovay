@@ -8,7 +8,7 @@ public class EmployeeBook {
 
     private final Employee employees[] = new Employee[10];
 
-    public EmployeeBook() {
+    /*public EmployeeBook() {
         employees[0] = new Employee("Иванов Иван Иванович", 1, 15000);
         employees[1] = new Employee("Сидоров Петр Сергеевич", 3, 40500f);
         employees[2] = new Employee("Сергеев Антон Алексеевич", 3, 70200f);
@@ -18,8 +18,8 @@ public class EmployeeBook {
         employees[6] = new Employee("Сидоров Петр Сергеевич", 3, 40500f);
         employees[7] = new Employee("Петров Алексей Иванович", 2, 45500f);
         employees[8] = new Employee("Петров Алексей Иванович", 2, 45500f);
-//        employees[9]=new Employee("Антонов Сергей Сергеевич", 1, 67200f);
-    }
+       employees[9]=new Employee("Антонов Сергей Сергеевич", 1, 67200f);
+    }*/
 
 
     public void setDepartament(int departament) {
